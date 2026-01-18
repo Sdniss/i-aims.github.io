@@ -40,6 +40,13 @@ permalink: /members/
         <div class="member-links">
 
           {% if member.links.orcid %}
+            <a href="{{ member.links.linkedin }}" target="_blank"
+               aria-label="LinkedIn" class="member-icon">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          {% endif %}
+
+          {% if member.links.orcid %}
             <a href="{{ member.links.orcid }}" target="_blank"
                aria-label="ORCID" class="member-icon">
               <i class="fa-brands fa-orcid"></i>

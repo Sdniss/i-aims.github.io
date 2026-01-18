@@ -6,6 +6,7 @@ photo: /assets/members/Stijn.jpg
 bio: >
   Physiotherapist by training, undercover agent among the AI developers. Triathlete, guitarist, nearly-dad.
 links:
+  linkedin: https://www.linkedin.com/in/stijndenissen/
   researchgate: https://www.researchgate.net/profile/Stijn-Denissen
   google_scholar: https://scholar.google.com/citations?user=H9KHafoAAAAJ&hl=en
   website: https://aims.research.vub.be/nl/stijn-denissen
