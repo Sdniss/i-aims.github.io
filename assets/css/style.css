@@ -261,6 +261,10 @@ body {
   color: #7289da;
 }
 
+.fa-github {
+  color: #000000;
+}
+
 /* Blog index */
 .blog-index h1 {
   margin-bottom: 0.5rem;
