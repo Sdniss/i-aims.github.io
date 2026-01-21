@@ -55,6 +55,38 @@ body {
   color: var(--navy);
   font-weight: 500;
   white-space: nowrap;
+  position: relative;   /* REQUIRED */
+  padding-bottom: 0.5rem;
+}
+
+/* Active page */
+.nav-links a.active {
+  color: var(--teal);
+  font-weight: 600;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+
+  width: 6px;
+  height: 6px;
+  background: var(--teal);
+  border-radius: 50%;
+
+  transform: translateX(-50%) scale(0);
+  transition: transform 0.25s ease;
+}
+
+.nav-links a.active::after {
+  transform: translateX(-50%) scale(1);
+}
+
+/* Hover (non-active) */
+.nav-links a:not(.active):hover {
+  color: var(--teal);
 }
 
 .nav-links .cta {
@@ -62,6 +94,17 @@ body {
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 6px;
+}
+
+.nav-links a.cta::after {
+  background: white;
+  bottom: -10px;
+}
+
+.nav-links a.cta.active {
+  background: red;
+  color: white;
+  font-weight: 600;
 }
 
 .site-nav {

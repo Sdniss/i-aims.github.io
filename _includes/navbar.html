@@ -5,13 +5,61 @@
     </a>
 
     <ul class="nav-links">
-      <li><a href="/">Home</a></li>
-      <li><a href="/our-story/">Our Story</a></li>
-      <li><a href="/members/">Members</a></li>
-      <li><a href="/events/">Events</a></li>
-      <li><a href="/blog/">Blog</a></li>
-      <li><a href="/media/">Media</a></li>
-      <li><a href="/join/" class="cta">Join Us</a></li>
+      <li>
+        <a href="/"
+           data-nav="home"
+          class="{% if page.nav == 'home' %}active{% endif %}">
+          Home
+        </a>
+      </li>
+
+      <li>
+        <a href="/our-story/"
+           data-nav="our-story"
+           class="{% if page.nav == 'our-story' %}active{% endif %}">
+          Our Story
+        </a>
+      </li>
+
+      <li>
+        <a href="/members/"
+           data-nav="members"
+           class="{% if page.nav == 'members' %}active{% endif %}">
+          Members
+        </a>
+      </li>
+
+      <li>
+        <a href="/events/"
+           data-nav="events"
+           class="{% if page.nav == 'events' %}active{% endif %}">
+          Events
+        </a>
+      </li>
+
+      <li>
+        <a href="/blog/"
+           data-nav="blog"
+           class="{% if page.nav == 'blog' %}active{% endif %}">
+          Blog
+        </a>
+      </li>
+
+      <li>
+        <a href="/media/"
+           data-nav="media"
+           class="{% if page.nav == 'media' %}active{% endif %}">
+          Media
+        </a>
+      </li>
+
+      <li>
+        <a href="/join/"
+           data-nav="join"
+           class="cta {% if page.nav == 'join' %}active{% endif %}">
+          Join Us
+        </a>
+      </li>
     </ul>
   </div>
 </nav>
