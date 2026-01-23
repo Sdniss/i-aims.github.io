@@ -33,7 +33,15 @@
       <a href="{{ event.recording }}"
            target="_blank" rel="noopener"
            aria-label="iAIMS YouTube channel">
-          <i class="fa-brands fa-youtube"></i> Watch recording
+          <i class="fa-brands fa-youtube"></i> &nbsp;Recording<br>
+      </a>
+      {% endif %}
+
+      {% if event.linkedin %}
+      <a href="{{ event.linkedin }}"
+           target="_blank" rel="noopener"
+           aria-label="iAIMS LinkedIn">
+          <i class="fa-brands fa-linkedin"></i> &nbsp; LinkedIn event
       </a>
       {% endif %}
   </p>
