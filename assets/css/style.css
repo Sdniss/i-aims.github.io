@@ -20,6 +20,7 @@ html, html[data-theme="light"] {
   --secondary-color: var(--secondary);
   --main-background-color: var(--light);
   --main-text-color: var(--dark);
+  --card-background: var(--dark-transparent);
 }
 
 html, html[data-theme="dark"] {
@@ -36,6 +37,7 @@ html, html[data-theme="dark"] {
     --secondary-color: var(--primary);
     --main-background-color: var(--dark);
     --main-text-color: var(--light);
+    --card-background: var(--bright-transparent);
   }
 
   html, html[data-theme="light"] {
@@ -43,6 +45,7 @@ html, html[data-theme="dark"] {
     --secondary-color: var(--secondary);
     --main-background-color: var(--light);
     --main-text-color: var(--dark);
+    --card-background: var(--dark-transparent);
   }
 }
 
@@ -575,7 +578,7 @@ body {
   gap: 1rem;
   align-items: center;
   color: var(--main-background-color);
-  padding: 0.6rem 0.8rem;
+  padding: 1.2rem 1.2rem;
   cursor: pointer;
   border-radius: 8px;
   background: var(--primary-color);
@@ -616,9 +619,11 @@ body {
 /* Arrow indicator */
 .past-event-summary::after {
   content: "▸";
-  margin-left: 0.5rem;
+  margin-top: 2rem;
+  margin-left: 0.2rem;
   transition: transform 0.2s ease;
   opacity: 0.6;
+  position: absolute;
 }
 
 .past-event[open] .past-event-summary::after {
