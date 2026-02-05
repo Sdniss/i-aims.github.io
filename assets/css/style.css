@@ -175,6 +175,7 @@ body {
 
 .nav-links .theme-toggle:hover {
   border-radius: 12px;
+  cursor: pointer
 }
 
 .nav-links a.theme-toggle:hover {
