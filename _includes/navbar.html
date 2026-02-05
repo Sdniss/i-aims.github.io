@@ -1,7 +1,7 @@
 <nav class="navbar">
   <div class="nav-container">
     <a href="/" class="logo">
-      <img src="/assets/images/Logo_with_Space.svg" alt="iAIMS logo" width="200px">
+      <img src="/assets/images/Logo_with_Space.svg" alt="iAIMS logo" class="navbar-logo">
     </a>
 
     <ul class="nav-links">
@@ -46,14 +46,6 @@
       </li>
 
       <li>
-        <a href="/media/"
-           data-nav="media"
-           class="{% if page.nav == 'media' %}active{% endif %}">
-          Media
-        </a>
-      </li>
-
-      <li>
         <a href="/join/"
            data-nav="join"
            class="cta {% if page.nav == 'join' %}active{% endif %}">
@@ -62,8 +54,8 @@
       </li>
 
       <li>
-        <a href="{{page.url}}"
-           id="theme-toggle"
+        <a id="theme-toggle"
+           class="theme-toggle"
            onclick="modeSwitcher()">
         </a>
       </li>
