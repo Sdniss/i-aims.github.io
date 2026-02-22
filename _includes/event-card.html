@@ -10,6 +10,25 @@
 
   <h3 class="event-title">{{ event.title }}</h3>
 
+    {% if event.host %}
+    {% assign host = site.members | where: "slug", event.host | first %}
+    {% if host %}
+    <div class="event-host">
+      <img
+        src="{{ host.photo | relative_url }}"
+        alt="Photo of {{ host.name }}"
+        class="event-host-photo"
+      >
+      <div class="event-host-info">
+        <p class="event-host-name">{{ host.name }}</p>
+        {% if host.affiliation %}
+          <p class="event-host-affiliation">{{ host.affiliation }}</p>
+        {% endif %}
+      </div>
+    </div>
+    {% endif %}
+    {% endif %}
+
   <p class="event-details">
       {% if event.date %}
         📅 &nbsp;{{ event.date | date: "%d/%m/%Y" }}<br>
